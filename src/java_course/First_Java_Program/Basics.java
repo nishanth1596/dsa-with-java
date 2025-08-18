@@ -1,4 +1,4 @@
-package com.nishanth;
+package java_course.First_Java_Program;
 
 public class Basics {
     public static void main(String[] args) {
