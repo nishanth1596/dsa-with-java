@@ -9,18 +9,17 @@ public class Fibonacci {
         Scanner input = new Scanner(System.in);
         System.out.println("Provide the number you want to see the Fibonacci");
         int userInput = input.nextInt();
-        int a = 0;
-        int b = 1;
-        int fibonacci = 0;
+        int p = 0;
+        int i = 1;
+        int count = 2;
 
-        for (int i = 1; i < userInput; i++) {
-            fibonacci = a + b;
-            b = b + a;
-            a = b;
+        while (count <= userInput) {
+            int temp = i;
 
-            System.out.print(fibonacci + " ");
+            i = p + i ;
+            p = temp;
+             count++;
         }
-// 0 1 1 2 3 5
-        System.out.println("Fiobacci of the given number is " + fibonacci);
+        System.out.println(i);
     }
 }
